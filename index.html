@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://bootstrap3.cyberlab.info/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <title>scrollspy.jsを使うナビゲーション・バーのサンプル ≪ Bootstrap3日本語リファレンス</title>
+
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body role="document" data-spy="scroll" data-target="#sampleScrollSpy" data-offset="72" id="top">
+
+  <div id="sampleScrollSpy">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sampleNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#top">CoderDojo船橋@凛童舎</a>
+        </div>
+        <div class="collapse navbar-collapse" id="sampleNavbar">
+          <ul class="nav navbar-nav">
+            <li><a class="linkInThePage" href="#dojo">dojo</a></li>
+            <li><a class="linkInThePage" href="#funabashi">funabashi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h2>CoderDojo船橋@凛童舎にようこそ</h2>
+      <p>子どものためのプログラミング道場</P>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Main component for a primary marketing message or call to action -->
+    <h2 id="dojo">CoderDojoとは</h2>
+    <p>CoderDojo は子どもの為に無料で開催されているプログラミング道場です。2011年にアイルランドで始まり、国際的ムーブメントとなっています。</p>
+    <a class="btn btn-primary" href="https://coderdojo.com" role="button">CoderDojo.com(英語) &raquo;</a>
+    <a class="btn btn-primary" href="https://coderdojo.jp" role="button">CoderDojo.jp(日本語) &raquo;</a>
+    <br>
+    <br>
+    <p>詳細は下のガイダンスをご覧ください。（スライドが見えない場合は<a class="regular-link" target="_blank" href="https://www.slideshare.net/togazo/coderdojo-introduction-jp">コチラ</a>
+      <br>
+      <iframe src="https://www.slideshare.net/slideshow/embed_code/key/FAXoW4pBq172mQ" width="595" height="485" frameborder="0"
+        marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+        allowfullscreen> </iframe>
+      <div style="margin-bottom:5px">
+        <strong>
+                <a class="regular-link" href="https://www.slideshare.net/togazo/coderdojo-introduction-jp" title="CoderDojoガイダンス（最新版）" target="_blank">CoderDojoガイダンス（最新版）</a> </strong>        from <strong><a class="regular-link" target="_blank" href="https://www.slideshare.net/togazo">K. Toga.</a>
+            </strong>
+      </div>
+    </p>
+    <h2 id="funabashi">CoderDojo船橋@凛童舎について</h2>
+    <p>CoderDojo船橋@凛童舎 は、船橋プログラミング部が主催する子ども向けプログラミング道場です。 千葉県船橋市前原のキッズコミュニティ凛童舎 様をお借りして毎月１回開催される予定です
+      <h3>ご注意</h3>
+      <p>CoderDojo船橋の運営に 凛童舎 様は関わっておりません。
+        <br>CoderDojo 船橋について、凛童舎 様にお問い合わせすることはお止めくださいますよう、お願いいたします</p>
+    </p>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="http://bootstrap3.cyberLab.info/jquery/animatescroll.js-master/animatescroll.noeasing.js"></script>
+    <script>
+        $(function () {
+            $('.linkInThePage').click(function () {
+                var hrefValue = jQuery(this).attr('href');
+                $(hrefValue).animatescroll({ padding: 70 });
+            });
+        });
+    </script>
+</body>
+
+</html>
