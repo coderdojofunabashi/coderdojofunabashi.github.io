@@ -1,0 +1,11 @@
+title: 船橋プログラミング部
+lang: ja
+email: 'chiba@coderdojo.chiba.jp'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://chiba.coderdojo.chiba.jp"
+github_username: coderdojo-chiba
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

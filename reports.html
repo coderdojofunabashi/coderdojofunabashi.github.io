@@ -1,0 +1,22 @@
+---
+layout: default
+title: 開催レポート
+---
+
+<section id="jumbotron subhead">
+  {% assign report_pages = site.pages | where_exp: "page", "page.url contains '/report/'" | sort: 'date' %}
+  <h2>開催レポート</h2>
+
+  <ul>
+    {% for page in report_pages reversed %}
+    <li><a href="{{page.url | relative_url }}">{{ page.title | escape }} ({{page.date}})</a></li>
+    {% endfor %}
+  </ul>
+  <div class="row photo">
+    <img src="images/header.jpg" alt="第0回の様子">
+  </div>
+
+  <h2>会計報告</h2>
+
+  <a target="_blank" href="https://docs.google.com/spreadsheets/d/1CZFh12z510NRKdzXc862R2ItwGIktRD1huCYmIGbwFc/edit?usp=sharing">会計報告はこちら</a>
+</section>

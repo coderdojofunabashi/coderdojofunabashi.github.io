@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  {% if page.path == 'index.html' %}
+  <title>{{ page.title }}</title>
+  {% else %}
+  <title>{{ page.title }} | 船橋プログラミング部</title>
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css" rel="stylesheet">
+  <link href="/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+</head>
+<body id="top">
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="/">CoderDojo Chiba</a>
+
+      <div class="nav-collapse collapse" id="main-menu">
+        <ul class="nav" id="main-menu-left">
+          <li><a href="/reports.html">開催レポート</a></li>
+          <li><a href="https://www.facebook.com/groups/coderdojo.chiba/" target="_blank">Facebook Group</a></li>
+          <li><a href="https://github.com/coderdojo-chiba" target="_blank">GitHub</a></li>
+          <li><a href="https://zen.coderdojo.com/dojo/jp/chiba-ken/chiba-chiba-prefecture/chiba" target="_blank">Zen</a></li>
+          <li><a href="http://coderdojo.chiba.jp/" target="_blank">CoderDojo千葉県</a></li>
+          <li><a href="http://coderdojo.jp/" target="_blank">CoderDojo Japan</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  {{ content }}
+  <hr>
+  <footer>
+    <div>連絡は <a href="https://www.facebook.com/groups/coderdojo.chiba/" target="_blank">Facebook Group</a>へお願いします。グループの発言は公開されるため、個別の連絡は<a href="mailto:chiba@coderdojo.chiba.jp">こちら</a>に直接お願いします。
+    </div>
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.ja"><img alt="クリエイティブ・コモンズ・ライセンス"
+                                                                                    style="border-width:0"
+                                                                                    src="https://i.creativecommons.org/l/by/3.0/88x31.png"/></a><br/><span
+          xmlns:dct="http://purl.org/dc/terms/" property="dct:title">CoderDojo Chiba Webpage</span> は <a rel="license"
+                                                                                                         href="http://creativecommons.org/licenses/by/3.0/deed.ja">クリエイティブ・コモンズ
+    表示 3.0 非移植 ライセンスの下で提供されています。</a>.
+    <p class="pull-right"><a href="#top">上へ</a></p>
+  </footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

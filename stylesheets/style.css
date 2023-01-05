@@ -1,0 +1,24 @@
+@media (min-width: 980px) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+section {
+    clear: both;
+}
+
+a.brand {
+    background-image: url("/images/CoderDojoChiba_m.png");
+    background-position: 0px 10px;
+    background-repeat: no-repeat;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 10px;
+    margin: 10px;
+}
